@@ -1,0 +1,461 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sri Laxmi Engineering Center | Medak</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f7fb;
+    color: #222;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #003b8e, #0066cc);
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.logo p {
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+    min-height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background:
+        linear-gradient(rgba(0,40,100,.75), rgba(0,70,150,.75)),
+        url("https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    margin: 7px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    background: white;
+    color: #0056b3;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    padding: 60px 7%;
+}
+
+.section-title {
+    text-align: center;
+    color: #003b8e;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+/* About */
+.about {
+    background: white;
+    text-align: center;
+}
+
+.about p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* Products */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 28px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card .icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Contact */
+.contact {
+    background: #eef5ff;
+}
+
+.contact-box {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.contact-item {
+    margin: 18px 0;
+    font-size: 17px;
+}
+
+.contact-item strong {
+    color: #003b8e;
+}
+
+/* Map */
+.map {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 25px;
+}
+
+/* Footer */
+footer {
+    background: #002b66;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 7px;
+}
+
+/* WhatsApp */
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 58px;
+    height: 58px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 29px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.3);
+    z-index: 999;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 45px 5%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <h1>🌟 Sri Laxmi Engineering Center</h1>
+        <p>Trusted Plumbing & Hardware Store - Medak</p>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div>
+        <h2>Sri Laxmi Engineering Center</h2>
+
+        <p>
+            Quality Plumbing, Sanitary & Hardware Products
+        </p>
+
+        <p>
+            📍 MG Road, Near Shivaji Statue & Indian Bank, Medak - 502110
+        </p>
+
+        <a class="btn" href="#products">View Products</a>
+        <a class="btn" href="#contact">Contact Us</a>
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <h2 class="section-title">About Us</h2>
+
+    <p>
+        <b>Sri Laxmi Engineering Center</b> is a trusted plumbing,
+        sanitary and hardware store in Medak. We provide quality
+        products for homes, commercial buildings and construction
+        projects.
+    </p>
+
+    <br>
+
+    <p>
+        📍 Located on MG Road, near Shivaji Statue and Indian Bank,
+        Medak - 502110.
+    </p>
+
+    <br>
+
+    <p>
+        🏆 Serving customers with quality products and reliable service.
+    </p>
+
+</section>
+
+
+<!-- PRODUCTS -->
+<section id="products">
+
+    <h2 class="section-title">Our Products</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <div class="icon">🚰</div>
+            <h3>Pipes & Fittings</h3>
+            <p>
+                CPVC, PVC, UPVC and SWR pipes and fittings.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💧</div>
+            <h3>Water Tanks</h3>
+            <p>
+                Quality water storage tanks for homes and buildings.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚙️</div>
+            <h3>Water Pumps</h3>
+            <p>
+                Pumps and related plumbing equipment.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚿</div>
+            <h3>Bathroom Products</h3>
+            <p>
+                Taps, sanitary ware and bathroom accessories.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏠</div>
+            <h3>Sanitary Ware</h3>
+            <p>
+                Sanitary products for modern homes and buildings.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔧</div>
+            <h3>Hardware</h3>
+            <p>
+                Plumbing materials and building hardware.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact-box">
+
+        <div class="contact-item">
+            <strong>🏪 Business:</strong>
+            Sri Laxmi Engineering Center
+        </div>
+
+        <div class="contact-item">
+            <strong>📍 Address:</strong>
+            MG Road, Near Shivaji Statue,
+            Near Indian Bank, Medak - 502110,
+            Telangana, India
+        </div>
+
+        <div class="contact-item">
+            <strong>📞 Phone:</strong>
+            <a href="tel:+919392079056">9392079056</a>
+        </div>
+
+        <div class="contact-item">
+            <strong>🕙 Working Hours:</strong>
+            Monday - Saturday: 10:00 AM - 10:00 PM
+        </div>
+
+        <iframe
+            class="map"
+            src="https://www.google.com/maps?q=Sri%20Laxmi%20Engineering%20Center%20Medak&output=embed"
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+</section>
+
+
+<!-- WHATSAPP -->
+<a
+    class="whatsapp"
+    href="https://wa.me/919392079056?text=Hello%20Sri%20Laxmi%20Engineering%20Center"
+    target="_blank"
+    title="Chat on WhatsApp">
+    💬
+</a>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        © <span id="year"></span>
+        Sri Laxmi Engineering Center
+    </p>
+
+    <p>
+        MG Road • Near Shivaji Statue • Near Indian Bank • Medak - 502110
+    </p>
+
+    <p>
+        Quality Products • Trusted Service
+    </p>
+
+</footer>
+
+
+<script>
+/* Current Year */
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+/* Smooth navigation */
+document.querySelectorAll("nav a").forEach(function(link) {
+    link.addEventListener("click", function() {
+        console.log("Opening: " + this.getAttribute("href"));
+    });
+});
+</script>
+
+</body>
+</html>
+```
